@@ -3,18 +3,66 @@
 <head>
   <title>WEB1-HTML</title>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+  h1{font-size: 45px;
+  text-align:center;
+  margin: 0px;
+  padding: 20px;
+border-bottom: 1px solid gray;}
+ol{border-right: 1px solid gray;
+width:100px;
+margin: 0px;
+padding: 33px;}
+a{
+  color:black;
+  text-decoration: none;
+}
+body{margin: 0px;}
+h1{font-size: 45px;
+  text-align: center;
+}
+.saw{color: black;}
+.active{color: black;}
+#grid{display: grid;
+grid-template-columns:150px 1fr;}
+#article{padding-left: 25px;}
+@media(max-width: 800px){
+  #grid {
+    display:block;
+    }
+
+  #grid ol{
+      border-right:none;}
+}
+  </style>
 </head>
 
 <body>
   <h1><a href="index.html">WEB</a></h1>
+<div id="grid">
 <ol>
-  <li><a href="1.html">HTML</li>
-  <li><a href="2.html">CSS</li>
-  <li><a href="3.html">JavaScript</li>
+  <li><a href="1.html" class="saw">HTML</a></li>
+  <li><a href="2.html" class="saw active">CSS</a></li>
+  <li><a href="3.html">JavaScript</a></li>
 </ol>
-<h2>HTML이란 무엇인가</h2>
-<a href="https://www.w3.org/TR/2011/WD-html5-20110405/" target="_blank" title="HTML5 specification">Hypertext Markup Language(HTML)</a><br>
-Hypertext Markup Language (HTML) is the standard markup language[a] for documents designed to be displayed in a web browser. It defines the content and structure of web content. It is often assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript, a programming language.
+<div id="article">
+<h2>
+  HTML
+</h2>
+<p>HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content. Other technologies besides HTML are generally used to describe a web page's appearance/presentation (CSS) or functionality/behavior (JavaScript).</p>
+</div>
+</div>
+  <!--
+  <h1><a href="index.html"><font color="red">WEB</a></h1>
+<ol>
+  <li><a href="1.html"><font color="red">HTML</li>
+  <li><a href="2.html"><font color="red">CSS</li>
+  <li><a href="3.html"><font color="red">JavaScript</li>
+</ol>
 
+<h2>HTML이란 무엇인가</h2>
+<a href="https://www.w3.or  g/TR/2011/WD-html5-20110405/" target="_blank" title="HTML5 specification">Hypertext Markup Language(HTML)</a><br>
+-->
 </body>
 </html>
